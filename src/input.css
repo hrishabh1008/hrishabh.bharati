@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    .navbar{
+        @apply py-2 px-3 text-gray-500 hover:text-gray-900 font-medium transition duration-200 drop-shadow-lg
+    }
+}
