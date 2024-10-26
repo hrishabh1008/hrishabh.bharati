@@ -908,6 +908,41 @@ video {
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
+.first-letter\:float-left::first-letter {
+  float: left;
+}
+
+.first-letter\:mr-3::first-letter {
+  margin-right: 0.75rem;
+}
+
+.first-letter\:text-2xl::first-letter {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.first-letter\:text-7xl::first-letter {
+  font-size: 4.5rem;
+  line-height: 1;
+}
+
+.first-letter\:font-bold::first-letter {
+  font-weight: 700;
+}
+
+.first-letter\:text-white::first-letter {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.first-line\:uppercase::first-line {
+  text-transform: uppercase;
+}
+
+.first-line\:tracking-widest::first-line {
+  letter-spacing: 0.1em;
+}
+
 .hover\:bg-blue-700:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(29 78 216 / var(--tw-bg-opacity));
