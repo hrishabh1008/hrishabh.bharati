@@ -1,65 +1,313 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- HEAD -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>_H.R.B_</title>
-    <link rel="stylesheet" href="/hrishabh.bharati (github repo)/dist/output.css">
-    <link rel="stylesheet" href="/hrishabh.bharati (github repo)/dist/style.css">
-</head>
-<body class="bg-slate-500">
+    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-    <header><h1 class="font-extrabold">HRISHABH RAMGOPAL BHARATI</h1></header>
-   
-    <aside>aside tag
-        <div class="flex-col bg-gray-500">profile photo and name
-            <img class="rounded-full" src="/hrishabh.bharati (github repo)/dist/media/images/hrb.jpg" alt="hrishabh's Profile Photo">
-        </div>
-        <nav >navigation
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Work</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#blogs">Blog</a></li>
-                <li><a href="#contact">Contact</a></li>
+    <script type="module">
+        import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs'
+
+        const swiper = new Swiper(...)
+    </script>
+</head>
+
+<!-- BODY -->
+
+<body class="mx-4">
+
+
+    <!-- HEADER SECTION -->
+    <header class=" flex flex-row ">
+        <img class="rounded-full w-20 inline" src="/portfolio/dist/media/images/hrb.jpg"
+            alt="hrishabh's Profile Photo">
+        <h1 class="font-extrabold inline mx-5">HRISHABH RAMGOPAL BHARATI</h1>
+<!-- NAVIGATION BAR -->
+        <nav class="mx-4 grow">
+            <ul class="flex flex-row gap-4 justify-end grow">
+                <a id="icon" href="#home"><img class="w-7 " src="/portfolio/dist/media/icons/home_icon.svg"
+                        alt="home icon"></a>
+                <a id="icon" href="about"><img class="w-7 "
+                        src="/portfolio/dist/media/icons/about_information_info_help_icon.svg" alt="about icon"></a>
+                <a id="icon" href="#services"><img class="w-7"
+                        src="/portfolio/dist/media/icons/vehicle_services_icon.svg" alt="services icon"></a>
+                <a id="icon" href="#skills"><img class="w-7"
+                        src="/portfolio/dist/media/icons/employee_soft_skills_business_team_icon.svg"
+                        alt="skills icon"></a>
+                <a id="icon" href="#work"><img class="w-7"
+                        src="/portfolio/dist/media/icons/accure_compass_creative_geometry_measurement_icon.svg"
+                        alt="projects"></a>
+                <a id="icon" href="#education"><img class="w-7" src="/portfolio/dist/media/icons/text_book_icon.svg"
+                        alt="education icon"></a>
+                <a id="icon" href="#experience"><img class="w-7"
+                        src="/portfolio/dist/media/icons/arrow_chart_curve_experience_goal_icon.svg"
+                        alt="experience icon"></a>
+                <a id="icon" href="#blogs"><img class="w-7"
+                        src="/portfolio/dist/media/icons/livejournal_account_blogs_comment_communication_icon.svg"
+                        alt="blogs icon"></a>
+                <a id="icon" href="#contact"><img class="w-7" src="/portfolio/dist/media/icons/contact_ic_mail_icon.svg"
+                        alt="contact icon" 7></a>
             </ul>
         </nav>
-    </aside>
 
-    <main class="bg-teal-300">
-        <section id="home">home 
-            <p>2 swiper class</p>
+    </header>
+
+<!-- MAIN CONTENT -->
+
+    <main class="bg-slate-300   ">
+
+        <!--HOME SECTION -->
+        <section id="home" class="border-8 place-items-center flex flex-col max-sm:hidden"><img class="w-7 "
+                src="/portfolio/dist/media/icons/home_icon.svg" alt="home icon">HOME
+            <!-- <p>swiper class</p> -->
+
+            <!-- Slider main container -->
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide"><img src="/portfolio/dist/media/images/wall/blackpanther.jpg"
+                            alt="wallpaper"></div>
+                    <div class="swiper-slide"><img src="/portfolio/dist/media/images/wall/pexels-pixabay-33045.jpg"
+                            alt="wallpaper"></div>
+                    <div class="swiper-slide"><img src="/portfolio/dist/media/images/wall/tiger.jpg" alt="wallpaper">
+                    </div>
+                    ...
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+                <!-- If we need scrollbar -->
+                <div class="swiper-scrollbar"></div>
+            </div>
+        </section>
+        <br>
+
+        <!-- SERVICES SECTION -->
+
+        <section class="flex flex-col border-8 md:grid md:grid-cols-3 " id="services">
+            <h2 class=" text-center md:grid-cols-subgrid col-span-3 place-items-center"><img class="w-7"
+                    src="/portfolio/dist/media/icons/vehicle_services_icon.svg" alt="services icon">HIRE ME FOR:</h2>
+
+            <article class="h-32">service1</article>
+            <article class="h-32">service2</article>
+            <article class="h-32">service3</article>
+            <article class="h-32">service4</article>
+            <article class="h-32">service5</article>
+            <article class="h-32">service6</article>
         </section><br>
-        <section id="about">
-            who am i 
+
+        <!-- ABOUT ME SECTION -->
+
+
+
+        <section class="border-8 flex flex-col justify-center" id="about">
+
+            <h2 class="text-center place-items-center"><img class="w-7 "
+                    src="/portfolio/dist/media/icons/about_information_info_help_icon.svg" alt="about icon">ABOUT ME
+            </h2>
+
+            <img class="rounded-2xl h-2/3 w-2/3 text-center self-center "
+                src="/portfolio/dist/media/images/wall/ronaldo.jpg" alt="PROFILE IMAGE">
+
+            <p class="text-center">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus sapiente reiciendis illo perferendis
+                fugiat ipsa voluptatum minima odio veritatis! Sed quae vero explicabo obcaecati ipsam enim facere
+                corrupti consectetur sequi!
+            </p>
 
         </section><br>
-        <section id="services">
-            Services- what i do
+
+        <!-- SKILLS SECTION -->
+
+
+        <section class="flex flex-col border-8 md:grid md:grid-cols-3 " id="skills">
+            <h2 class=" text-center md:grid-cols-subgrid col-span-3 place-items-center"><img class="w-7"
+                    src="/portfolio/dist/media/icons/employee_soft_skills_business_team_icon.svg"
+                    alt="skills icon">Skills: Progress Bars</h2>
+
+            <article class="h-32">skill-1</article>
+            <article class="h-32">skill-2</article>
+            <article class="h-32">skill-3</article>
+            <article class="h-32">skill-4</article>
+            <article class="h-32">skill-5</article>
+            <article class="h-32">skill-6</article>
         </section><br>
-        <section id="skills">skills - horizontal progress bars</section><br>
-        <section id="projects">projects _ my work</section><br>
-        <section id="education">Eduacation
-            <article>skills learned from</article><br>
-            <article>formal Education</article>
+
+        <!-- PROJECTS SECTION -->
+        <section class="flex flex-col border-8 md:grid md:grid-cols-3 " id="projects">
+            <h2 class=" text-center md:grid-cols-subgrid col-span-3 place-items-center"><img class="w-7"
+                    src="/portfolio/dist/media/icons/accure_compass_creative_geometry_measurement_icon.svg"
+                    alt="">PROJECTS</h2>
+
+            <article class="h-32">project1</article>
+            <article class="h-32">project2</article>
+            <article class="h-32">project3</article>
+            <article class="h-32">project4</article>
+            <article class="h-32">project5</article>
+            <article class="h-32">project6</article>
         </section><br>
-        <section id="experience">work experience 
-            <article>1</article>
-            <article>2</article>
-            <article>3</article>
-            <article>4</article>
+
+        <!-- EDUCATION SECTION -->
+
+        <section class="flex flex-col border-8 md:grid md:grid-cols-3 " id="education">
+            <h2 class=" text-center md:grid-cols-subgrid col-span-3 place-items-center"><img class="w-7"
+                    src="/portfolio/dist/media/icons/text_book_icon.svg" alt="education icon">EDUCATION</h2>
+
+            <article class="h-32">edu-1</article>
+            <article class="h-32">edu-2</article>
+            <article class="h-32">edu-3</article>
+            <article class="h-32">edu-4</article>
+            <article class="h-32">edu-5</article>
+            <article class="h-32">edu-6</article>
         </section><br>
-        <section id="Blogs">Blogs</section><br>
-        <section id="contact">Contact</section><br>
+
+
+
+        <!-- EXPERIENCE SECTION -->
+        <section class="flex flex-col border-8 md:grid md:grid-cols-3 " id="experience">
+            <h2 class=" text-center md:grid-cols-subgrid col-span-3 place-items-center"><img class="w-7"
+                    src="/portfolio/dist/media/icons/arrow_chart_curve_experience_goal_icon.svg"
+                    alt="experience icon">WORK EXPERIENCE</h2>
+
+            <article class="h-32">exp1</article>
+            <article class="h-32">exp2</article>
+            <article class="h-32">exp3</article>
+            <article class="h-32">exp4</article>
+            <article class="h-32">exp5</article>
+            <article class="h-32">exp6</article>
+        </section><br>
+
+        <!-- BLOGS SECTION -->
+        <section class="flex flex-col border-8 md:grid md:grid-cols-3 " id="Blogs">
+            <h2 class=" text-center md:grid-cols-subgrid col-span-3 place-items-center">
+                <img class="w-7"
+                    src="/portfolio/dist/media/icons/livejournal_account_blogs_comment_communication_icon.svg"
+                    alt="blogs icon">
+                BLOGS
+            </h2>
+
+            <article class="h-32">blog1</article>
+            <article class="h-32">blog2</article>
+            <article class="h-32">blog3</article>
+            <article class="h-32">blog4</article>
+            <article class="h-32">blog5</article>
+            <article class="h-32">blog6</article>
+        </section><br>
+
+        <!-- CONTACT US SECTION  -->
+        <section id="contact" class="grid grid-cols-2 border-8 max-md:flex max-md:flex-col  ">
+            <div class="grid-cols-subgrid col-span-2 place-items-center">
+                <img class="w-7" src="/portfolio/dist/media/icons/contact_ic_mail_icon.svg" alt="contact icon" 7>
+                <h2>CONTACT US</h2>
+            </div>
+            <!-- PERSONAL DETAILS -->
+            <article class="bg-yellow-300">
+
+                <div class="flex flex-row"><img class="w-10 stroke-2" src="/portfolio/dist/media/icons/address.svg"
+                        alt="">
+                    <div class="grow ">
+                        <h6 class="text-center">Address</h6>
+                        <p>1615 Angie Drive</p>
+                        <p>Burbank</p>
+                        <p>California</p>
+                        <p>zip: 915050</p>
+                    </div>
+                </div>
+                <div class="flex flex-row">
+                    <img class="w-10" src="/portfolio/dist/media/icons/phone old.svg" alt="">
+                    <div class="grow">
+                        <h6 class="text-center">Contact Numbers
+                        </h6>
+                        <p>Mobile Number: 818-209-0644</p>
+                        <p>Telephone Number: 714-906-1884</p>
+                    </div>
+                </div>
+                <div class="flex flex-row">
+                    <img class="w-10" src="/portfolio/dist/media/icons/down_email_app_essential_arrow_icon.svg" alt="">
+                    <div class="grow">
+                        <h6 class="text-center">Email ID</h6>
+                        <p>mehebok243@aqqor.com</p>
+                    </div>
+                </div>
+            </article>
+
+            <!-- FEEDBACK FORM -->
+            <form class="contact-form flex flex-col bg-green-400" action="submit_form.php" method="post">
+                <h2>Feedback form </h2>
+
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+
+        </section><br>
     </main>
-<footer>all rights reserved
 
-</footer>
+    <!-- FOOTER SECTION -->
+    <footer>
+        <div class="flex flex-row gap-8 justify-center">
+            <a href="#"> <img class="w-6" src="/portfolio/dist/media/icons/whatsapp.svg" alt="whatsapp icon"></a>
+            <a href="#"><img class="w-6" src="/portfolio/dist/media/icons/twitter x.svg" alt="twitter icon"></a>
+            <a href="#"><img class="w-6" src="/portfolio/dist/media/icons/github.svg" alt="github icon"></a>
+            <a href="#"><img class="w-6" src="/portfolio/dist/media/icons/telegram.svg" alt="telegram icon"></a>
+            <a href="#"><img class="w-6" src="/portfolio/dist/media/icons/linkedin.svg" alt="linkedin icon"></a>
+            <a href="#"> <img class="w-6" src="/portfolio/dist/media/icons/instagram.svg" alt="instagram icon"></a>
+
+        </div>
+        <div class="flex flex-col justify-center">
+            <p class="text-center">All Rights Reserved</p>
+            <p class="text-center"> &copy; 2024 HRISHABH RAMGOPAL BHARATI | All rights reserved. |</p> <br>
+            <p class="text-center"><a href="/privacy-policy">Privacy Policy</a> | <a href="/terms-of-service">Terms of
+                    Service</a></p>
+        </div>
+    </footer>
 
 
+    <!-- SWIPER JS INITIALIZATION -->
+    <script>
+        const swiper = new Swiper('.swiper', {
+            // Optional parameters
+            direction: 'horizontal',
+            loop: true,
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            // And if we need scrollbar
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            },
+        });
+    </script>
 </body>
+
+
 </html>
