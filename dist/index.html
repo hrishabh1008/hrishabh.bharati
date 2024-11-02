@@ -23,53 +23,59 @@
 
 
     <!-- HEADER SECTION -->
-    <header class=" flex flex-row ">
+    <header class=" flex flex-row items-center my-4 ">
         <img class="rounded-full w-20 inline" src="/portfolio/dist/media/images/hrb.jpg"
             alt="hrishabh's Profile Photo">
         <h1 class="font-extrabold inline mx-5">HRISHABH RAMGOPAL BHARATI</h1>
 <!-- NAVIGATION BAR -->
-        <nav class="mx-4 grow">
-            <ul class="flex flex-row gap-4 justify-end grow">
-                <a id="icon" href="#home"><img class="w-7 " src="/portfolio/dist/media/icons/home_icon.svg"
+        <nav class="mx-4 grow ">
+            <ul class="flex flex-row gap-4 justify-end grow max-sm:grid max-sm:grid-cols-5">
+                <a id="icon" href="#home"><img class="w-7 max-sm:w-14 max-sm:gap-1" src="/portfolio/dist/media/icons/home_icon.svg"
                         alt="home icon"></a>
-                <a id="icon" href="about"><img class="w-7 "
+                <a id="icon" href="about"><img class="w-7 max-sm:w-14 max-sm:gap-1"
                         src="/portfolio/dist/media/icons/about_information_info_help_icon.svg" alt="about icon"></a>
-                <a id="icon" href="#services"><img class="w-7"
+                <a id="icon" href="#services"><img class="w-7 max-sm:w-14 max-sm:gap-1"
                         src="/portfolio/dist/media/icons/vehicle_services_icon.svg" alt="services icon"></a>
-                <a id="icon" href="#skills"><img class="w-7"
+                <a id="icon" href="#skills"><img class="w-7 max-sm:w-14 max-sm:gap-1"
                         src="/portfolio/dist/media/icons/employee_soft_skills_business_team_icon.svg"
                         alt="skills icon"></a>
-                <a id="icon" href="#work"><img class="w-7"
+                <a id="icon" href="#work"><img class="w-7 max-sm:w-14 max-sm:gap-1"
                         src="/portfolio/dist/media/icons/accure_compass_creative_geometry_measurement_icon.svg"
                         alt="projects"></a>
-                <a id="icon" href="#education"><img class="w-7" src="/portfolio/dist/media/icons/text_book_icon.svg"
+                <a id="icon" href="#education"><img class="w-7 max-sm:w-14 max-sm:gap-1" src="/portfolio/dist/media/icons/text_book_icon.svg"
                         alt="education icon"></a>
-                <a id="icon" href="#experience"><img class="w-7"
+                <a id="icon" href="#experience"><img class="w-7 max-sm:w-14 max-sm:gap-1"
                         src="/portfolio/dist/media/icons/arrow_chart_curve_experience_goal_icon.svg"
                         alt="experience icon"></a>
-                <a id="icon" href="#blogs"><img class="w-7"
+                <a id="icon" href="#blogs"><img class="w-7 max-sm:w-14 max-sm:gap-1"
                         src="/portfolio/dist/media/icons/livejournal_account_blogs_comment_communication_icon.svg"
                         alt="blogs icon"></a>
-                <a id="icon" href="#contact"><img class="w-7" src="/portfolio/dist/media/icons/contact_ic_mail_icon.svg"
+                <a id="icon" href="#contact"><img class="w-7 max-sm:w-14 max-sm:gap-1" src="/portfolio/dist/media/icons/contact_ic_mail_icon.svg"
                         alt="contact icon" 7></a>
             </ul>
         </nav>
+        <div class="dark-mode-toggle">
+            <button id="darkModeToggle" class="bg-gray-300 dark:bg-gray-700 p-2 rounded-full focus:outline-none">
+                <span id="toggleIcon" class="text-gray-800 dark:text-gray-200">🌞</span>
+            </button>
+        </div>
+    
 
     </header>
 
 <!-- MAIN CONTENT -->
 
-    <main class="bg-slate-300   ">
+    <main class="bg-slate-300 dark:bg-violet-600   ">
 
         <!--HOME SECTION -->
-        <section id="home" class="border-8 place-items-center flex flex-col max-sm:hidden"><img class="w-7 "
+        <section id="home" class="border-8 md:h-dvh place-items-center flex flex-col max-sm:hidden"><img class="w-7 "
                 src="/portfolio/dist/media/icons/home_icon.svg" alt="home icon">HOME
             <!-- <p>swiper class</p> -->
 
             <!-- Slider main container -->
             <div class="swiper">
                 <!-- Additional required wrapper -->
-                <div class="swiper-wrapper">
+                <div class="swiper-wrapper ">
                     <!-- Slides -->
                     <div class="swiper-slide"><img src="/portfolio/dist/media/images/wall/blackpanther.jpg"
                             alt="wallpaper"></div>
@@ -88,6 +94,11 @@
 
                 <!-- If we need scrollbar -->
                 <div class="swiper-scrollbar"></div>
+            </div>
+            <div>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum optio ab quisquam eum! Aspernatur eius, ipsum assumenda ab eligendi quaerat. Itaque porro provident voluptate iure excepturi voluptatibus adipisci debitis consectetur.</p><br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit eius vel architecto illum blanditiis cupiditate dolorem animi perspiciatis, reprehenderit nisi beatae quidem nobis ipsa tempore, sequi voluptate rem eos possimus.</p><br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo ipsa aspernatur quisquam cumque, delectus sit vel tenetur magnam laboriosam dolore eos aperiam nesciunt repellat expedita quo quibusdam, molestiae impedit reiciendis!</p><br>
             </div>
         </section>
         <br>
@@ -130,17 +141,38 @@
         <!-- SKILLS SECTION -->
 
 
-        <section class="flex flex-col border-8 md:grid md:grid-cols-3 " id="skills">
+        <section itemid="skillsec" class="flex flex-col border-8 md:grid md:grid-cols-3 gap-7 place-items-center place-content-center " id="skills">
             <h2 class=" text-center md:grid-cols-subgrid col-span-3 place-items-center"><img class="w-7"
                     src="/portfolio/dist/media/icons/employee_soft_skills_business_team_icon.svg"
                     alt="skills icon">Skills: Progress Bars</h2>
 
-            <article class="h-32">skill-1</article>
-            <article class="h-32">skill-2</article>
-            <article class="h-32">skill-3</article>
-            <article class="h-32">skill-4</article>
-            <article class="h-32">skill-5</article>
-            <article class="h-32">skill-6</article>
+            <article class="h-auto "><img class="h-20 rounded-md max-sm:inline-block" src="/portfolio/dist/media/images/png_img/javascript.png" alt="javascript">
+            <p class="max-md:inline-block">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius, sequi.</p>
+            </article>
+            <article class="h-auto "><img class="h-20 rounded-md max-sm:inline-block" src="/portfolio/dist/media/images/png_img/cpp.png" alt="c++">
+            <p class="max-md:inline-block">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius, sequi.</p>
+            </article>
+            <article class="h-auto "><img class="h-20 rounded-md max-sm:inline-block" src="/portfolio/dist/media/images/png_img/java.png" alt="java">
+            <p class="max-md:inline-block">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius, sequi.</p>
+            </article>
+            <article class="h-auto "><img class="h-20 rounded-md max-sm:inline-block" src="/portfolio/dist/media/images/png_img/mysql.png" alt="mysql">
+            <p class="max-md:inline-block">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius, sequi.</p>
+            </article>
+            <article class="h-auto "><img class="h-20 rounded-md max-sm:inline-block" src="/portfolio/dist/media/images/png_img/python.png" alt="python">
+            <p class="max-md:inline-block">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius, sequi.</p>
+            </article>
+            <article class="h-auto "><img class="h-20 rounded-md max-sm:inline-block" src="/portfolio/dist/media/images/png_img/nodejs.png" alt="nodejs">
+            <p class="max-md:inline-block">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius, sequi.</p>
+            </article>
+            <article class="h-auto "><img class="h-20 rounded-md max-sm:inline-block" src="/portfolio/dist/media/images/png_img/css.png" alt="css">
+            <p class="max-md:inline-block">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius, sequi.</p>
+            </article>
+            <article class="h-auto "><img class="h-20 rounded-md max-sm:inline-block" src="/portfolio/dist/media/images/png_img/reactjs.png" alt="reactjs">
+            <p class="max-md:inline-block">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius, sequi.</p>
+            </article>
+            <article class="h-auto "><img class="h-20 rounded-md max-sm:inline-block" src="/portfolio/dist/media/images/png_img/html.png" alt="html">
+            <p class="max-md:inline-block">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius, sequi.</p>
+            </article>
         </section><br>
 
         <!-- PROJECTS SECTION -->
@@ -307,6 +339,32 @@
             },
         });
     </script>
+<!-- DARK MODE JS -->
+<script>
+    // Select the button and icon elements
+    const toggleButton = document.getElementById('darkModeToggle');
+    const toggleIcon = document.getElementById('toggleIcon');
+
+    // Check if dark mode is already enabled in localStorage
+    if (localStorage.getItem('theme') === 'dark') {
+        document.documentElement.classList.add('dark');
+        toggleIcon.textContent = '🌙';
+    }
+
+    // Toggle dark mode on button click
+    toggleButton.addEventListener('click', () => {
+        document.documentElement.classList.toggle('dark');
+
+        // Update icon and save theme to localStorage
+        if (document.documentElement.classList.contains('dark')) {
+            toggleIcon.textContent = '🌙';
+            localStorage.setItem('theme', 'dark');
+        } else {
+            toggleIcon.textContent = '🌞';
+            localStorage.setItem('theme', 'light');
+        }
+    });
+</script>
 </body>
 
 
