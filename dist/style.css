@@ -10,3 +10,11 @@
   align-content: center;
   justify-content: center;
 } */
+
+#skillsec p{
+ text-decoration: underline           ;
+}
+
+#skillsec img{
+  align-self: center;
+}

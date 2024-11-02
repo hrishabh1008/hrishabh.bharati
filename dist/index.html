@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <!-- HEAD -->
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,42 +16,55 @@
 
         const swiper = new Swiper(...)
     </script> -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
 </head>
 
 <!-- BODY -->
 
-<body class="mx-4">
+<body class=" dark:bg-[#412412] dark:text-white">
 
 
     <!-- HEADER SECTION -->
-    <header class=" flex flex-row items-center my-4 ">
-        <img class="rounded-full w-20 inline" src="/portfolio/dist/media/images/hrb.jpg"
-            alt="hrishabh's Profile Photo">
-        <h1 class="font-extrabold inline mx-5">HRISHABH RAMGOPAL BHARATI</h1>
-<!-- NAVIGATION BAR -->
-        <nav class="mx-4 grow ">
+    <header class=" flex flex-row items-center py-4 bg-slate-600 dark:bg-[#412412] ">
+        <img class="rounded-full w-20 p-2 inline hover:shadow-[5px_10px_20px_rgba(8,19,36,0.5)]"
+            src="/portfolio/dist/media/images/hrb.jpg" alt="hrishabh's Profile Photo">
+        <h1 class="font-extrabold inline mx-5 p-2 hover:drop-shadow-[0_20px_20px_rgba(8,19,36,1)] ">HRISHABH RAMGOPAL
+            BHARATI</h1>
+        <!-- NAVIGATION BAR -->
+        <nav class="mx-4 grow hover:drop-shadow-[0_20px_20px_rgba(8,19,36,1)]">
             <ul class="flex flex-row gap-4 justify-end grow max-sm:grid max-sm:grid-cols-5">
-                <a id="icon" href="#home"><img class="w-7 max-sm:w-14 max-sm:gap-1" src="/portfolio/dist/media/icons/home_icon.svg"
+                <a class="hover:drop-shadow-[0_20px_20px_rgba(8,19,36,1)]" id="icon" href="#home"><img
+                        class="w-7 max-sm:w-14 max-sm:gap-1" src="/portfolio/dist/media/icons/home_icon.svg"
                         alt="home icon"></a>
-                <a id="icon" href="about"><img class="w-7 max-sm:w-14 max-sm:gap-1"
+                <a class="hover:drop-shadow-[0_20px_20px_rgba(8,19,36,1)]" id="icon" href="#about"><img
+                        class="w-7 max-sm:w-14 max-sm:gap-1"
                         src="/portfolio/dist/media/icons/about_information_info_help_icon.svg" alt="about icon"></a>
-                <a id="icon" href="#services"><img class="w-7 max-sm:w-14 max-sm:gap-1"
-                        src="/portfolio/dist/media/icons/vehicle_services_icon.svg" alt="services icon"></a>
-                <a id="icon" href="#skills"><img class="w-7 max-sm:w-14 max-sm:gap-1"
+                <a class="hover:drop-shadow-[0_20px_20px_rgba(8,19,36,1)]" id="icon" href="#services"><img
+                        class="w-7 max-sm:w-14 max-sm:gap-1" src="/portfolio/dist/media/icons/vehicle_services_icon.svg"
+                        alt="services icon"></a>
+                <a class="hover:drop-shadow-[0_20px_20px_rgba(8,8,19,1)]" id="icon" href="#skills"><img
+                        class="w-7 max-sm:w-14 max-sm:gap-1"
                         src="/portfolio/dist/media/icons/employee_soft_skills_business_team_icon.svg"
                         alt="skills icon"></a>
-                <a id="icon" href="#work"><img class="w-7 max-sm:w-14 max-sm:gap-1"
+                <a class="hover:drop-shadow-[0_20px_20px_rgba(8,19,36,1)]" id="icon" href="#projects"><img
+                        class="w-7 max-sm:w-14 max-sm:gap-1"
                         src="/portfolio/dist/media/icons/accure_compass_creative_geometry_measurement_icon.svg"
                         alt="projects"></a>
-                <a id="icon" href="#education"><img class="w-7 max-sm:w-14 max-sm:gap-1" src="/portfolio/dist/media/icons/text_book_icon.svg"
+                <a class="hover:drop-shadow-[0_20px_20px_rgba(8,19,36,1)]" id="icon" href="#education"><img
+                        class="w-7 max-sm:w-14 max-sm:gap-1" src="/portfolio/dist/media/icons/text_book_icon.svg"
                         alt="education icon"></a>
-                <a id="icon" href="#experience"><img class="w-7 max-sm:w-14 max-sm:gap-1"
+                <a class="hover:drop-shadow-[0_20px_20px_rgba(8,19,36,1)]" id="icon" href="#experience"><img
+                        class="w-7 max-sm:w-14 max-sm:gap-1"
                         src="/portfolio/dist/media/icons/arrow_chart_curve_experience_goal_icon.svg"
                         alt="experience icon"></a>
-                <a id="icon" href="#blogs"><img class="w-7 max-sm:w-14 max-sm:gap-1"
+                <a class="hover:drop-shadow-[0_20px_20px_rgba(8,19,36,1)]" id="icon" href="#blogs"><img
+                        class="w-7 max-sm:w-14 max-sm:gap-1"
                         src="/portfolio/dist/media/icons/livejournal_account_blogs_comment_communication_icon.svg"
                         alt="blogs icon"></a>
-                <a id="icon" href="#contact"><img class="w-7 max-sm:w-14 max-sm:gap-1" src="/portfolio/dist/media/icons/contact_ic_mail_icon.svg"
+                <a class="hover:drop-shadow-[0_20px_20px_rgba(8,19,36,0.5)]" id="icon" href="#contact"><img
+                        class="w-7 max-sm:w-14 max-sm:gap-1" src="/portfolio/dist/media/icons/contact_ic_mail_icon.svg"
                         alt="contact icon" 7></a>
             </ul>
         </nav>
@@ -59,17 +73,18 @@
                 <span id="toggleIcon" class="text-gray-800 dark:text-gray-200">🌞</span>
             </button>
         </div>
-    
+
 
     </header>
 
-<!-- MAIN CONTENT -->
+    <!-- MAIN CONTENT -->
 
-    <main class="bg-slate-300 dark:bg-violet-600   ">
+    <main class=" bg-gradient-to-br from-red-700 to-fuchsia-900 dark:bg-[#412412] ">
 
         <!--HOME SECTION -->
-        <section id="home" class="border-8 md:h-dvh place-items-center flex flex-col max-sm:hidden"><img class="w-7 "
-                src="/portfolio/dist/media/icons/home_icon.svg" alt="home icon">HOME
+        <section id="home"
+            class="my-3 md:h-dvh place-items-center flex flex-col max-sm:hidden bg-[url('/portfolio\dist\media\images\wall\computer-thisisengineering-3861969.jpg')]">
+            <img class="w-7 " src="/portfolio/dist/media/icons/home_icon.svg" alt="home icon">HOME
             <!-- <p>swiper class</p> -->
 
             <!-- Slider main container -->
@@ -96,32 +111,118 @@
                 <div class="swiper-scrollbar"></div>
             </div>
             <div>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum optio ab quisquam eum! Aspernatur eius, ipsum assumenda ab eligendi quaerat. Itaque porro provident voluptate iure excepturi voluptatibus adipisci debitis consectetur.</p><br>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit eius vel architecto illum blanditiis cupiditate dolorem animi perspiciatis, reprehenderit nisi beatae quidem nobis ipsa tempore, sequi voluptate rem eos possimus.</p><br>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo ipsa aspernatur quisquam cumque, delectus sit vel tenetur magnam laboriosam dolore eos aperiam nesciunt repellat expedita quo quibusdam, molestiae impedit reiciendis!</p><br>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum optio ab quisquam eum! Aspernatur
+                    eius, ipsum assumenda ab eligendi quaerat. Itaque porro provident voluptate iure excepturi
+                    voluptatibus adipisci debitis consectetur.</p><br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit eius vel architecto illum blanditiis
+                    cupiditate dolorem animi perspiciatis, reprehenderit nisi beatae quidem nobis ipsa tempore, sequi
+                    voluptate rem eos possimus.</p><br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo ipsa aspernatur quisquam cumque,
+                    delectus sit vel tenetur magnam laboriosam dolore eos aperiam nesciunt repellat expedita quo
+                    quibusdam, molestiae impedit reiciendis!</p><br>
             </div>
+
+            <a href="/path/to/resume.pdf" download
+                class="px-6 py-3 bg-blue-600 text-white font-semibold rounded-md shadow-md transition-all duration-300 transform hover:scale-105 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50">
+                Download Resume
+            </a>
+
+            <div class="flex space-x-4 justify-center items-center mt-6">
+                <!-- Facebook -->
+                <a href="https://facebook.com" target="_blank"
+                    class="text-blue-600 hover:text-blue-800 transition-transform duration-300 transform hover:scale-110">
+                    <i class="fab fa-facebook-f text-2xl"></i>
+                </a>
+
+                <!-- Twitter -->
+                <a href="https://twitter.com" target="_blank"
+                    class="text-blue-400 hover:text-blue-600 transition-transform duration-300 transform hover:scale-110">
+                    <i class="fab fa-twitter text-2xl"></i>
+                </a>
+
+                <!-- LinkedIn -->
+                <a href="https://linkedin.com" target="_blank"
+                    class="text-blue-700 hover:text-blue-900 transition-transform duration-300 transform hover:scale-110">
+                    <i class="fab fa-linkedin-in text-2xl"></i>
+                </a>
+
+                <!-- Instagram -->
+                <a href="https://instagram.com" target="_blank"
+                    class="text-pink-500 hover:text-pink-700 transition-transform duration-300 transform hover:scale-110">
+                    <i class="fab fa-instagram text-2xl"></i>
+                </a>
+            </div>
+
         </section>
-        <br>
+
 
         <!-- SERVICES SECTION -->
+        <section class="flex flex-col my-3 md:grid md:grid-cols-3 gap-6" id="services">
+            <h2 class="text-center md:grid-cols-subgrid col-span-3 place-items-center mb-6">
+                <img class="w-7 inline-block mb-2" src="/portfolio/dist/media/icons/vehicle_services_icon.svg"
+                    alt="services icon">
+                <span class="text-2xl font-bold">HIRE ME FOR:</span>
+            </h2>
 
-        <section class="flex flex-col border-8 md:grid md:grid-cols-3 " id="services">
-            <h2 class=" text-center md:grid-cols-subgrid col-span-3 place-items-center"><img class="w-7"
-                    src="/portfolio/dist/media/icons/vehicle_services_icon.svg" alt="services icon">HIRE ME FOR:</h2>
+            <!-- Service Cards -->
+            <article
+                class="h-auto flex flex-col bg-white border border-gray-300 rounded-lg shadow-lg transition-transform duration-300 transform hover:scale-105 hover:shadow-xl p-4">
+                <h3 class="text-lg font-semibold mb-2">Web Development</h3>
+                <p class="text-gray-600">I specialize in creating responsive and interactive websites using the latest
+                    technologies. Let’s build something amazing together!</p>
+                <a href="#" class="mt-4 text-blue-500 hover:underline">Learn More</a>
+            </article>
 
-            <article class="h-32">service1</article>
-            <article class="h-32">service2</article>
-            <article class="h-32">service3</article>
-            <article class="h-32">service4</article>
-            <article class="h-32">service5</article>
-            <article class="h-32">service6</article>
-        </section><br>
+            <article
+                class="h-auto flex flex-col bg-white border border-gray-300 rounded-lg shadow-lg transition-transform duration-300 transform hover:scale-105 hover:shadow-xl p-4">
+                <h3 class="text-lg font-semibold mb-2">Mobile App Development</h3>
+                <p class="text-gray-600">Get a custom mobile application developed for iOS and Android that provides a
+                    seamless user experience. Turn your ideas into reality!</p>
+                <a href="#" class="mt-4 text-blue-500 hover:underline">Learn More</a>
+            </article>
+
+            <article
+                class="h-auto flex flex-col bg-white border border-gray-300 rounded-lg shadow-lg transition-transform duration-300 transform hover:scale-105 hover:shadow-xl p-4">
+                <h3 class="text-lg font-semibold mb-2">SEO Optimization</h3>
+                <p class="text-gray-600">Improve your website's visibility on search engines with my SEO services. I
+                    offer tailored strategies to increase your traffic and rankings.</p>
+                <a href="#" class="mt-4 text-blue-500 hover:underline">Learn More</a>
+            </article>
+
+            <article
+                class="h-auto flex flex-col bg-white border border-gray-300 rounded-lg shadow-lg transition-transform duration-300 transform hover:scale-105 hover:shadow-xl p-4">
+                <h3 class="text-lg font-semibold mb-2">Content Writing</h3>
+                <p class="text-gray-600">Engage your audience with high-quality, SEO-friendly content. From blogs to
+                    marketing copy, I create content that resonates with your audience.</p>
+                <a href="#" class="mt-4 text-blue-500 hover:underline">Learn More</a>
+            </article>
+
+            <article
+                class="h-auto flex flex-col bg-white border border-gray-300 rounded-lg shadow-lg transition-transform duration-300 transform hover:scale-105 hover:shadow-xl p-4">
+                <h3 class="text-lg font-semibold mb-2">Digital Marketing</h3>
+                <p class="text-gray-600">Maximize your online presence with my digital marketing services, including
+                    social media management and email marketing strategies.</p>
+                <a href="#" class="mt-4 text-blue-500 hover:underline">Learn More</a>
+            </article>
+
+            <article
+                class="h-auto flex flex-col bg-white border border-gray-300 rounded-lg shadow-lg transition-transform duration-300 transform hover:scale-105 hover:shadow-xl p-4">
+                <h3 class="text-lg font-semibold mb-2">E-commerce Solutions</h3>
+                <p class="text-gray-600">Launch your e-commerce store with an intuitive design and powerful features.
+                    Let's create an online shop that sells!</p>
+                <a href="#" class="mt-4 text-blue-500 hover:underline">Learn More</a>
+            </article>
+        </section>
+
+
+
+        <br>
 
         <!-- ABOUT ME SECTION -->
 
 
 
-        <section class="border-8 flex flex-col justify-center" id="about">
+        <section class="my-3 flex flex-col justify-center" id="about">
 
             <h2 class="text-center place-items-center"><img class="w-7 "
                     src="/portfolio/dist/media/icons/about_information_info_help_icon.svg" alt="about icon">ABOUT ME
@@ -135,182 +236,483 @@
                 fugiat ipsa voluptatum minima odio veritatis! Sed quae vero explicabo obcaecati ipsam enim facere
                 corrupti consectetur sequi!
             </p>
+            <button
+                class="px-4 py-2 mt-4 bg-gray-800 text-white font-medium rounded-md shadow-md transition-all duration-300 transform hover:scale-105 hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-opacity-50">
+                Read More
+            </button>
+
 
         </section><br>
 
         <!-- SKILLS SECTION -->
+        <section id="skills"
+            class="flex flex-col my-3 md:grid md:grid-cols-3 gap-7 place-items-center place-content-center">
+            <h2 class="text-center md:grid-cols-subgrid col-span-3 place-items-center mb-6">
+                <img class="w-7 inline-block mb-2"
+                    src="/portfolio/dist/media/icons/employee_soft_skills_business_team_icon.svg" alt="skills icon">
+                <span class="text-2xl font-bold">Skills: Progress Bars</span>
+            </h2>
+
+            <!-- Skill Cards -->
+            <article class="h-auto flex flex-col items-center">
+                <img class="h-20 rounded-md transition-transform duration-500 ease-out transform hover:scale-110 animate-fadeIn"
+                    src="/portfolio/dist/media/images/png_img/javascript.png" alt="JavaScript">
+                <p class="text-center mt-2 opacity-75 animate-slideIn">JavaScript: Dynamic and versatile for web
+                    development.</p>
+                <div class="w-full mt-2">
+                    <span class="text-center block mb-1">70%</span>
+                    <div class="relative w-full h-4 bg-gray-200 rounded-md">
+                        <div class="absolute h-full bg-blue-500 transition-all duration-700" style="width: 70%;"></div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="h-auto flex flex-col items-center">
+                <img class="h-20 rounded-md transition-transform duration-500 ease-out transform hover:scale-110 animate-fadeIn"
+                    src="/portfolio/dist/media/images/png_img/cpp.png" alt="C++">
+                <p class="text-center mt-2 opacity-75 animate-slideIn">C++: Powerful for system and application
+                    software.</p>
+                <div class="w-full mt-2">
+                    <span class="text-center block mb-1">70%</span>
+                    <div class="relative w-full h-4 bg-gray-200 rounded-md">
+                        <div class="absolute h-full bg-purple-500 transition-all duration-700" style="width: 70%;">
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="h-auto flex flex-col items-center">
+                <img class="h-20 rounded-md transition-transform duration-500 ease-out transform hover:scale-110 animate-fadeIn"
+                    src="/portfolio/dist/media/images/png_img/java.png" alt="Java">
+                <p class="text-center mt-2 opacity-75 animate-slideIn">Java: Robust and platform-independent
+                    programming.</p>
+                <div class="w-full mt-2">
+                    <span class="text-center block mb-1">65%</span>
+                    <div class="relative w-full h-4 bg-gray-200 rounded-md">
+                        <div class="absolute h-full bg-red-500 transition-all duration-700" style="width: 65%;"></div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="h-auto flex flex-col items-center">
+                <img class="h-20 rounded-md transition-transform duration-500 ease-out transform hover:scale-110 animate-fadeIn"
+                    src="/portfolio/dist/media/images/png_img/mysql.png" alt="MySQL">
+                <p class="text-center mt-2 opacity-75 animate-slideIn">MySQL: Leading open-source relational database.
+                </p>
+                <div class="w-full mt-2">
+                    <span class="text-center block mb-1">60%</span>
+                    <div class="relative w-full h-4 bg-gray-200 rounded-md">
+                        <div class="absolute h-full bg-orange-500 transition-all duration-700" style="width: 60%;">
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="h-auto flex flex-col items-center">
+                <img class="h-20 rounded-md transition-transform duration-500 ease-out transform hover:scale-110 animate-fadeIn"
+                    src="/portfolio/dist/media/images/png_img/python.png" alt="Python">
+                <p class="text-center mt-2 opacity-75 animate-slideIn">Python: Versatile and easy to learn for all
+                    purposes.</p>
+                <div class="w-full mt-2">
+                    <span class="text-center block mb-1">80%</span>
+                    <div class="relative w-full h-4 bg-gray-200 rounded-md">
+                        <div class="absolute h-full bg-yellow-500 transition-all duration-700" style="width: 80%;">
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="h-auto flex flex-col items-center">
+                <img class="h-20 rounded-md transition-transform duration-500 ease-out transform hover:scale-110 animate-fadeIn"
+                    src="/portfolio/dist/media/images/png_img/nodejs.png" alt="Node.js">
+                <p class="text-center mt-2 opacity-75 animate-slideIn">Node.js: Asynchronous event-driven JavaScript
+                    runtime.</p>
+                <div class="w-full mt-2">
+                    <span class="text-center block mb-1">75%</span>
+                    <div class="relative w-full h-4 bg-gray-200 rounded-md">
+                        <div class="absolute h-full bg-teal-500 transition-all duration-700" style="width: 75%;"></div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="h-auto flex flex-col items-center">
+                <img class="h-20 rounded-md transition-transform duration-500 ease-out transform hover:scale-110 animate-fadeIn"
+                    src="/portfolio/dist/media/images/png_img/css.png" alt="CSS">
+                <p class="text-center mt-2 opacity-75 animate-slideIn">CSS: Essential for styling web pages effectively.
+                </p>
+                <div class="w-full mt-2">
+                    <span class="text-center block mb-1">70%</span>
+                    <div class="relative w-full h-4 bg-gray-200 rounded-md">
+                        <div class="absolute h-full bg-indigo-500 transition-all duration-700" style="width: 70%;">
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="h-auto flex flex-col items-center">
+                <img class="h-20 rounded-md transition-transform duration-500 ease-out transform hover:scale-110 animate-fadeIn"
+                    src="/portfolio/dist/media/images/png_img/reactjs.png" alt="React.js">
+                <p class="text-center mt-2 opacity-75 animate-slideIn">React.js: Library for building user interfaces.
+                </p>
+                <div class="w-full mt-2">
+                    <span class="text-center block mb-1">75%</span>
+                    <div class="relative w-full h-4 bg-gray-200 rounded-md">
+                        <div class="absolute h-full bg-blue-600 transition-all duration-700" style="width: 75%;"></div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="h-auto flex flex-col items-center">
+                <img class="h-20 rounded-md transition-transform duration-500 ease-out transform hover:scale-110 animate-fadeIn"
+                    src="/portfolio/dist/media/images/png_img/html.png" alt="HTML">
+                <p class="text-center mt-2 opacity-75 animate-slideIn">HTML: The building blocks of web development.</p>
+                <div class="w-full mt-2">
+                    <span class="text-center block mb-1">65%</span>
+                    <div class="relative w-full h-4 bg-gray-200 rounded-md">
+                        <div class="absolute h-full bg-pink-500 transition-all duration-700" style="width: 65%;"></div>
+                    </div>
+                </div>
+            </article>
+        </section>
 
 
-        <section itemid="skillsec" class="flex flex-col border-8 md:grid md:grid-cols-3 gap-7 place-items-center place-content-center " id="skills">
-            <h2 class=" text-center md:grid-cols-subgrid col-span-3 place-items-center"><img class="w-7"
-                    src="/portfolio/dist/media/icons/employee_soft_skills_business_team_icon.svg"
-                    alt="skills icon">Skills: Progress Bars</h2>
 
-            <article class="h-auto "><img class="h-20 rounded-md max-sm:inline-block" src="/portfolio/dist/media/images/png_img/javascript.png" alt="javascript">
-            <p class="max-md:inline-block">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius, sequi.</p>
-            </article>
-            <article class="h-auto "><img class="h-20 rounded-md max-sm:inline-block" src="/portfolio/dist/media/images/png_img/cpp.png" alt="c++">
-            <p class="max-md:inline-block">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius, sequi.</p>
-            </article>
-            <article class="h-auto "><img class="h-20 rounded-md max-sm:inline-block" src="/portfolio/dist/media/images/png_img/java.png" alt="java">
-            <p class="max-md:inline-block">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius, sequi.</p>
-            </article>
-            <article class="h-auto "><img class="h-20 rounded-md max-sm:inline-block" src="/portfolio/dist/media/images/png_img/mysql.png" alt="mysql">
-            <p class="max-md:inline-block">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius, sequi.</p>
-            </article>
-            <article class="h-auto "><img class="h-20 rounded-md max-sm:inline-block" src="/portfolio/dist/media/images/png_img/python.png" alt="python">
-            <p class="max-md:inline-block">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius, sequi.</p>
-            </article>
-            <article class="h-auto "><img class="h-20 rounded-md max-sm:inline-block" src="/portfolio/dist/media/images/png_img/nodejs.png" alt="nodejs">
-            <p class="max-md:inline-block">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius, sequi.</p>
-            </article>
-            <article class="h-auto "><img class="h-20 rounded-md max-sm:inline-block" src="/portfolio/dist/media/images/png_img/css.png" alt="css">
-            <p class="max-md:inline-block">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius, sequi.</p>
-            </article>
-            <article class="h-auto "><img class="h-20 rounded-md max-sm:inline-block" src="/portfolio/dist/media/images/png_img/reactjs.png" alt="reactjs">
-            <p class="max-md:inline-block">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius, sequi.</p>
-            </article>
-            <article class="h-auto "><img class="h-20 rounded-md max-sm:inline-block" src="/portfolio/dist/media/images/png_img/html.png" alt="html">
-            <p class="max-md:inline-block">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius, sequi.</p>
-            </article>
-        </section><br>
+
+
+
+        <br>
 
         <!-- PROJECTS SECTION -->
-        <section class="flex flex-col border-8 md:grid md:grid-cols-3 " id="projects">
-            <h2 class=" text-center md:grid-cols-subgrid col-span-3 place-items-center"><img class="w-7"
-                    src="/portfolio/dist/media/icons/accure_compass_creative_geometry_measurement_icon.svg"
-                    alt="">PROJECTS</h2>
+        <section class="flex flex-col my-3 md:grid md:grid-cols-3 gap-4" id="projects">
+            <h2 class="text-center md:grid-cols-subgrid col-span-3 place-items-center mb-4">
+                <img class="w-7 inline-block mb-2"
+                    src="/portfolio/dist/media/icons/accure_compass_creative_geometry_measurement_icon.svg" alt="">
+                <span class="text-2xl font-bold">PROJECTS</span>
+            </h2>
 
-            <article class="h-32">project1</article>
-            <article class="h-32">project2</article>
-            <article class="h-32">project3</article>
-            <article class="h-32">project4</article>
-            <article class="h-32">project5</article>
-            <article class="h-32">project6</article>
-        </section><br>
+            <!-- Project Cards -->
+            <article
+                class="h-32 flex flex-col items-center justify-center bg-gradient-to-br from-blue-500 to-indigo-600 border border-gray-300 rounded-lg shadow-lg transition-transform duration-300 transform hover:scale-105 hover:shadow-xl p-4">
+                <h3 class="text-white font-semibold">Project 1</h3>
+                <p class="text-gray-200 text-center">A brief description of project 1.</p>
+            </article>
+
+            <article
+                class="h-32 flex flex-col items-center justify-center bg-gradient-to-br from-blue-500 to-indigo-600 border border-gray-300 rounded-lg shadow-lg transition-transform duration-300 transform hover:scale-105 hover:shadow-xl p-4">
+                <h3 class="text-white font-semibold">Project 2</h3>
+                <p class="text-gray-200 text-center">A brief description of project 2.</p>
+            </article>
+
+            <article
+                class="h-32 flex flex-col items-center justify-center bg-gradient-to-br from-blue-500 to-indigo-600 border border-gray-300 rounded-lg shadow-lg transition-transform duration-300 transform hover:scale-105 hover:shadow-xl p-4">
+                <h3 class="text-white font-semibold">Project 3</h3>
+                <p class="text-gray-200 text-center">A brief description of project 3.</p>
+            </article>
+
+            <article
+                class="h-32 flex flex-col items-center justify-center bg-gradient-to-br from-blue-500 to-indigo-600 border border-gray-300 rounded-lg shadow-lg transition-transform duration-300 transform hover:scale-105 hover:shadow-xl p-4">
+                <h3 class="text-white font-semibold">Project 4</h3>
+                <p class="text-gray-200 text-center">A brief description of project 4.</p>
+            </article>
+
+            <article
+                class="h-32 flex flex-col items-center justify-center bg-gradient-to-br from-blue-500 to-indigo-600 border border-gray-300 rounded-lg shadow-lg transition-transform duration-300 transform hover:scale-105 hover:shadow-xl p-4">
+                <h3 class="text-white font-semibold">Project 5</h3>
+                <p class="text-gray-200 text-center">A brief description of project 5.</p>
+            </article>
+
+            <article
+                class="h-32 flex flex-col items-center justify-center bg-gradient-to-br from-blue-500 to-indigo-600 border border-gray-300 rounded-lg shadow-lg transition-transform duration-300 transform hover:scale-105 hover:shadow-xl p-4">
+                <h3 class="text-white font-semibold">Project 6</h3>
+                <p class="text-gray-200 text-center">A brief description of project 6.</p>
+            </article>
+        </section>
+
+
+
+
+        <br>
 
         <!-- EDUCATION SECTION -->
+        <section class="flex flex-col my-3 md:grid md:grid-cols-3 gap-4" id="education">
+            <h2 class="text-center md:grid-cols-subgrid col-span-3 place-items-center">
+                <img class="w-7 inline-block mb-2" src="/portfolio/dist/media/icons/text_book_icon.svg"
+                    alt="education icon">
+                EDUCATION AND CERTIFICATIONS
+            </h2>
 
-        <section class="flex flex-col border-8 md:grid md:grid-cols-3 " id="education">
-            <h2 class=" text-center md:grid-cols-subgrid col-span-3 place-items-center"><img class="w-7"
-                    src="/portfolio/dist/media/icons/text_book_icon.svg" alt="education icon">EDUCATION</h2>
+            <!-- Education Entries -->
+            <article
+                class="h-32 flex flex-col items-center justify-center bg-gradient-to-br from-red-500 to-fuchsia-800 border border-gray-300 rounded-lg shadow-lg transition-transform duration-300 transform hover:scale-105 hover:shadow-xl">
+                <p class="text-center">edu-1</p>
+                <a href="/path/to/certificate1.pdf"
+                    class="mt-2 inline-block bg-white text-red-600 font-bold py-1 px-3 rounded hover:bg-red-600 hover:text-white transition-colors duration-300">
+                    View Certificate
+                </a>
+            </article>
 
-            <article class="h-32">edu-1</article>
-            <article class="h-32">edu-2</article>
-            <article class="h-32">edu-3</article>
-            <article class="h-32">edu-4</article>
-            <article class="h-32">edu-5</article>
-            <article class="h-32">edu-6</article>
-        </section><br>
+            <article
+                class="h-32 flex flex-col items-center justify-center bg-gradient-to-br from-red-500 to-fuchsia-800 border border-gray-300 rounded-lg shadow-lg transition-transform duration-300 transform hover:scale-105 hover:shadow-xl">
+                <p class="text-center">edu-2</p>
+                <a href="/path/to/certificate2.pdf"
+                    class="mt-2 inline-block bg-white text-red-600 font-bold py-1 px-3 rounded hover:bg-red-600 hover:text-white transition-colors duration-300">
+                    View Certificate
+                </a>
+            </article>
+
+            <article
+                class="h-32 flex flex-col items-center justify-center bg-gradient-to-br from-red-500 to-fuchsia-800 border border-gray-300 rounded-lg shadow-lg transition-transform duration-300 transform hover:scale-105 hover:shadow-xl">
+                <p class="text-center">edu-3</p>
+                <a href="/path/to/certificate3.pdf"
+                    class="mt-2 inline-block bg-white text-red-600 font-bold py-1 px-3 rounded hover:bg-red-600 hover:text-white transition-colors duration-300">
+                    View Certificate
+                </a>
+            </article>
+
+            <article
+                class="h-32 flex flex-col items-center justify-center bg-gradient-to-br from-red-500 to-fuchsia-800 border border-gray-300 rounded-lg shadow-lg transition-transform duration-300 transform hover:scale-105 hover:shadow-xl">
+                <p class="text-center">edu-4</p>
+                <a href="/path/to/certificate4.pdf"
+                    class="mt-2 inline-block bg-white text-red-600 font-bold py-1 px-3 rounded hover:bg-red-600 hover:text-white transition-colors duration-300">
+                    View Certificate
+                </a>
+            </article>
+
+            <article
+                class="h-32 flex flex-col items-center justify-center bg-gradient-to-br from-red-500 to-fuchsia-800 border border-gray-300 rounded-lg shadow-lg transition-transform duration-300 transform hover:scale-105 hover:shadow-xl">
+                <p class="text-center">edu-5</p>
+                <a href="/path/to/certificate5.pdf"
+                    class="mt-2 inline-block bg-white text-red-600 font-bold py-1 px-3 rounded hover:bg-red-600 hover:text-white transition-colors duration-300">
+                    View Certificate
+                </a>
+            </article>
+
+            <article
+                class="h-32 flex flex-col items-center justify-center bg-gradient-to-br from-red-500 to-fuchsia-800 border border-gray-300 rounded-lg shadow-lg transition-transform duration-300 transform hover:scale-105 hover:shadow-xl">
+                <p class="text-center">edu-6</p>
+                <a href="/path/to/certificate6.pdf"
+                    class="mt-2 inline-block bg-white text-red-600 font-bold py-1 px-3 rounded hover:bg-red-600 hover:text-white transition-colors duration-300">
+                    View Certificate
+                </a>
+            </article>
+        </section>
+
+        <br>
 
 
 
         <!-- EXPERIENCE SECTION -->
-        <section class="flex flex-col border-8 md:grid md:grid-cols-3 " id="experience">
-            <h2 class=" text-center md:grid-cols-subgrid col-span-3 place-items-center"><img class="w-7"
-                    src="/portfolio/dist/media/icons/arrow_chart_curve_experience_goal_icon.svg"
-                    alt="experience icon">WORK EXPERIENCE</h2>
-
-            <article class="h-32">exp1</article>
-            <article class="h-32">exp2</article>
-            <article class="h-32">exp3</article>
-            <article class="h-32">exp4</article>
-            <article class="h-32">exp5</article>
-            <article class="h-32">exp6</article>
-        </section><br>
-
-        <!-- BLOGS SECTION -->
-        <section class="flex flex-col border-8 md:grid md:grid-cols-3 " id="Blogs">
-            <h2 class=" text-center md:grid-cols-subgrid col-span-3 place-items-center">
-                <img class="w-7"
-                    src="/portfolio/dist/media/icons/livejournal_account_blogs_comment_communication_icon.svg"
-                    alt="blogs icon">
-                BLOGS
+        <section class="flex flex-col my-3 md:grid md:grid-cols-3 gap-4" id="experience">
+            <h2 class="text-center md:grid-cols-subgrid col-span-3 place-items-center mb-4">
+                <img class="w-7 inline-block mb-2"
+                    src="/portfolio/dist/media/icons/arrow_chart_curve_experience_goal_icon.svg" alt="experience icon">
+                <span class="text-2xl font-bold">WORK EXPERIENCE</span>
             </h2>
 
-            <article class="h-32">blog1</article>
-            <article class="h-32">blog2</article>
-            <article class="h-32">blog3</article>
-            <article class="h-32">blog4</article>
-            <article class="h-32">blog5</article>
-            <article class="h-32">blog6</article>
-        </section><br>
+            <!-- Experience Entries -->
+            <article
+                class="h-32 flex items-center justify-center bg-gradient-to-br from-green-500 to-teal-500 border border-gray-300 rounded-lg shadow-lg transition-transform duration-300 transform hover:scale-105 hover:shadow-xl p-4">
+                <h3 class="text-white font-semibold">Experience 1</h3>
+                <p class="text-gray-200 text-center">Description of your experience in this role.</p>
+            </article>
 
-        <!-- CONTACT US SECTION  -->
-        <section id="contact" class="grid grid-cols-2 border-8 max-md:flex max-md:flex-col  ">
-            <div class="grid-cols-subgrid col-span-2 place-items-center">
-                <img class="w-7" src="/portfolio/dist/media/icons/contact_ic_mail_icon.svg" alt="contact icon" 7>
-                <h2>CONTACT US</h2>
+            <article
+                class="h-32 flex items-center justify-center bg-gradient-to-br from-green-500 to-teal-500 border border-gray-300 rounded-lg shadow-lg transition-transform duration-300 transform hover:scale-105 hover:shadow-xl p-4">
+                <h3 class="text-white font-semibold">Experience 2</h3>
+                <p class="text-gray-200 text-center">Description of your experience in this role.</p>
+            </article>
+
+            <article
+                class="h-32 flex items-center justify-center bg-gradient-to-br from-green-500 to-teal-500 border border-gray-300 rounded-lg shadow-lg transition-transform duration-300 transform hover:scale-105 hover:shadow-xl p-4">
+                <h3 class="text-white font-semibold">Experience 3</h3>
+                <p class="text-gray-200 text-center">Description of your experience in this role.</p>
+            </article>
+
+            <article
+                class="h-32 flex items-center justify-center bg-gradient-to-br from-green-500 to-teal-500 border border-gray-300 rounded-lg shadow-lg transition-transform duration-300 transform hover:scale-105 hover:shadow-xl p-4">
+                <h3 class="text-white font-semibold">Experience 4</h3>
+                <p class="text-gray-200 text-center">Description of your experience in this role.</p>
+            </article>
+
+            <article
+                class="h-32 flex items-center justify-center bg-gradient-to-br from-green-500 to-teal-500 border border-gray-300 rounded-lg shadow-lg transition-transform duration-300 transform hover:scale-105 hover:shadow-xl p-4">
+                <h3 class="text-white font-semibold">Experience 5</h3>
+                <p class="text-gray-200 text-center">Description of your experience in this role.</p>
+            </article>
+
+            <article
+                class="h-32 flex items-center justify-center bg-gradient-to-br from-green-500 to-teal-500 border border-gray-300 rounded-lg shadow-lg transition-transform duration-300 transform hover:scale-105 hover:shadow-xl p-4">
+                <h3 class="text-white font-semibold">Experience 6</h3>
+                <p class="text-gray-200 text-center">Description of your experience in this role.</p>
+            </article>
+        </section>
+
+        <!-- BLOGS SECTION -->
+        <section id="blogs" class="flex flex-col my-3 md:grid md:grid-cols-3 gap-6">
+            <h2 class="text-center md:grid-cols-subgrid col-span-3 place-items-center mb-6">
+                <img class="w-7 inline-block mb-2"
+                    src="/portfolio/dist/media/icons/livejournal_account_blogs_comment_communication_icon.svg"
+                    alt="blogs icon">
+                <span class="text-2xl font-bold">Blogs</span>
+            </h2>
+
+            <!-- Blog Cards -->
+            <article
+                class="h-auto flex flex-col bg-white border border-gray-300 rounded-lg shadow-lg transition-transform duration-300 transform hover:scale-105 hover:shadow-xl p-4">
+                <h3 class="text-lg font-semibold mb-2">Understanding JavaScript Closures</h3>
+                <p class="text-gray-600">JavaScript closures are an essential concept in JavaScript, allowing for data
+                    encapsulation and private variables. This article explains how closures work and their practical
+                    applications.</p>
+                <a href="#" class="mt-4 text-blue-500 hover:underline">Read More</a>
+            </article>
+
+            <article
+                class="h-auto flex flex-col bg-white border border-gray-300 rounded-lg shadow-lg transition-transform duration-300 transform hover:scale-105 hover:shadow-xl p-4">
+                <h3 class="text-lg font-semibold mb-2">A Beginner's Guide to React</h3>
+                <p class="text-gray-600">React is a powerful JavaScript library for building user interfaces. In this
+                    guide, we will cover the basics of React and how to get started with your first application.</p>
+                <a href="#" class="mt-4 text-blue-500 hover:underline">Read More</a>
+            </article>
+
+            <article
+                class="h-auto flex flex-col bg-white border border-gray-300 rounded-lg shadow-lg transition-transform duration-300 transform hover:scale-105 hover:shadow-xl p-4">
+                <h3 class="text-lg font-semibold mb-2">Mastering CSS Grid Layout</h3>
+                <p class="text-gray-600">CSS Grid Layout is a two-dimensional layout system for the web. This blog post
+                    discusses how to create responsive layouts using CSS Grid.</p>
+                <a href="#" class="mt-4 text-blue-500 hover:underline">Read More</a>
+            </article>
+
+            <article
+                class="h-auto flex flex-col bg-white border border-gray-300 rounded-lg shadow-lg transition-transform duration-300 transform hover:scale-105 hover:shadow-xl p-4">
+                <h3 class="text-lg font-semibold mb-2">Exploring the New Features of HTML5</h3>
+                <p class="text-gray-600">HTML5 introduces many new features and elements that enhance the functionality
+                    of web pages. This article explores these new features and how to use them effectively.</p>
+                <a href="#" class="mt-4 text-blue-500 hover:underline">Read More</a>
+            </article>
+
+            <article
+                class="h-auto flex flex-col bg-white border border-gray-300 rounded-lg shadow-lg transition-transform duration-300 transform hover:scale-105 hover:shadow-xl p-4">
+                <h3 class="text-lg font-semibold mb-2">Getting Started with Python for Data Science</h3>
+                <p class="text-gray-600">Python has become a go-to language for data science. In this blog, we will
+                    cover the essentials of Python and its libraries for data analysis.</p>
+                <a href="#" class="mt-4 text-blue-500 hover:underline">Read More</a>
+            </article>
+
+            <article
+                class="h-auto flex flex-col bg-white border border-gray-300 rounded-lg shadow-lg transition-transform duration-300 transform hover:scale-105 hover:shadow-xl p-4">
+                <h3 class="text-lg font-semibold mb-2">An Introduction to Web Accessibility</h3>
+                <p class="text-gray-600">Web accessibility ensures that all users can access and use the web. This
+                    article discusses the importance of accessibility and best practices for implementing it in web
+                    design.</p>
+                <a href="#" class="mt-4 text-blue-500 hover:underline">Read More</a>
+            </article>
+        </section>
+
+
+        <!-- CONTACT US SECTION -->
+        <section id="contact" class="grid grid-cols-1 md:grid-cols-2 my-3 gap-6 p-6">
+            <div class="col-span-1 flex flex-col items-center mb-6 md:mb-0">
+                <img class="w-10 mb-3" src="/portfolio/dist/media/icons/contact_ic_mail_icon.svg" alt="contact icon">
+                <h2 class="text-2xl font-bold">CONTACT US</h2>
             </div>
-            <!-- PERSONAL DETAILS -->
-            <article class="bg-yellow-300">
 
-                <div class="flex flex-row"><img class="w-10 stroke-2" src="/portfolio/dist/media/icons/address.svg"
-                        alt="">
-                    <div class="grow ">
-                        <h6 class="text-center">Address</h6>
-                        <p>1615 Angie Drive</p>
-                        <p>Burbank</p>
-                        <p>California</p>
-                        <p>zip: 915050</p>
+            <!-- PERSONAL DETAILS -->
+            <article class="bg-yellow-300 p-4 rounded-lg shadow-md flex flex-col space-y-4">
+                <div class="flex items-start">
+                    <img class="w-10" src="/portfolio/dist/media/icons/address.svg" alt="Address Icon">
+                    <div class="ml-3">
+                        <h6 class="font-semibold">Address</h6>
+                        <p>1615 Angie Drive,</p>
+                        <p>Burbank, California,</p>
+                        <p>Zip: 915050</p>
                     </div>
                 </div>
-                <div class="flex flex-row">
-                    <img class="w-10" src="/portfolio/dist/media/icons/phone old.svg" alt="">
-                    <div class="grow">
-                        <h6 class="text-center">Contact Numbers
-                        </h6>
-                        <p>Mobile Number: 818-209-0644</p>
-                        <p>Telephone Number: 714-906-1884</p>
+                <div class="flex items-start">
+                    <img class="w-10" src="/portfolio/dist/media/icons/phone old.svg" alt="Phone Icon">
+                    <div class="ml-3">
+                        <h6 class="font-semibold">Contact Numbers</h6>
+                        <p>Mobile: 818-209-0644</p>
+                        <p>Telephone: 714-906-1884</p>
                     </div>
                 </div>
-                <div class="flex flex-row">
-                    <img class="w-10" src="/portfolio/dist/media/icons/down_email_app_essential_arrow_icon.svg" alt="">
-                    <div class="grow">
-                        <h6 class="text-center">Email ID</h6>
+                <div class="flex items-start">
+                    <img class="w-10" src="/portfolio/dist/media/icons/down_email_app_essential_arrow_icon.svg"
+                        alt="Email Icon">
+                    <div class="ml-3">
+                        <h6 class="font-semibold">Email ID</h6>
                         <p>mehebok243@aqqor.com</p>
                     </div>
                 </div>
             </article>
 
             <!-- FEEDBACK FORM -->
-            <form class="contact-form flex flex-col bg-green-400" action="submit_form.php" method="post">
-                <h2>Feedback form </h2>
+            <form class="contact-form flex flex-col bg-green-400 p-6 rounded-lg shadow-md" action="submit_form.php"
+                method="post">
+                <h2 class="text-xl font-bold mb-4">Feedback Form</h2>
 
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" required>
+                <label class="mb-2 font-semibold" for="name">Name</label>
+                <input
+                    class="p-2 mb-4 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-400"
+                    type="text" id="name" name="name" required>
 
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" required>
+                <label class="mb-2 font-semibold" for="email">Email</label>
+                <input
+                    class="p-2 mb-4 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-400"
+                    type="email" id="email" name="email" required>
 
-                <label for="subject">Subject</label>
-                <input type="text" id="subject" name="subject" required>
+                <label class="mb-2 font-semibold" for="subject">Subject</label>
+                <input
+                    class="p-2 mb-4 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-400"
+                    type="text" id="subject" name="subject" required>
 
-                <label for="message">Message</label>
-                <textarea id="message" name="message" required></textarea>
+                <label class="mb-2 font-semibold" for="message">Message</label>
+                <textarea
+                    class="p-2 mb-4 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-400"
+                    id="message" name="message" rows="4" required></textarea>
 
-                <button type="submit">Submit</button>
+                <button class="bg-blue-500 text-white py-2 rounded hover:bg-blue-600 transition duration-300"
+                    type="submit">Submit</button>
             </form>
+        </section>
 
-        </section><br>
     </main>
 
     <!-- FOOTER SECTION -->
-    <footer>
-        <div class="flex flex-row gap-8 justify-center">
-            <a href="#"> <img class="w-6" src="/portfolio/dist/media/icons/whatsapp.svg" alt="whatsapp icon"></a>
-            <a href="#"><img class="w-6" src="/portfolio/dist/media/icons/twitter x.svg" alt="twitter icon"></a>
-            <a href="#"><img class="w-6" src="/portfolio/dist/media/icons/github.svg" alt="github icon"></a>
-            <a href="#"><img class="w-6" src="/portfolio/dist/media/icons/telegram.svg" alt="telegram icon"></a>
-            <a href="#"><img class="w-6" src="/portfolio/dist/media/icons/linkedin.svg" alt="linkedin icon"></a>
-            <a href="#"> <img class="w-6" src="/portfolio/dist/media/icons/instagram.svg" alt="instagram icon"></a>
-
+    <footer class="bg-gray-800 text-white py-6">
+        <div class="flex flex-row gap-8 justify-center mb-4">
+            <a href="#" aria-label="WhatsApp">
+                <img class="w-6 transition-transform duration-300 hover:scale-110"
+                    src="/portfolio/dist/media/icons/whatsapp.svg" alt="WhatsApp icon">
+            </a>
+            <a href="#" aria-label="Twitter">
+                <img class="w-6 transition-transform duration-300 hover:scale-110"
+                    src="/portfolio/dist/media/icons/twitter x.svg" alt="Twitter icon">
+            </a>
+            <a href="#" aria-label="GitHub">
+                <img class="w-6 transition-transform duration-300 hover:scale-110"
+                    src="/portfolio/dist/media/icons/github.svg" alt="GitHub icon">
+            </a>
+            <a href="#" aria-label="Telegram">
+                <img class="w-6 transition-transform duration-300 hover:scale-110"
+                    src="/portfolio/dist/media/icons/telegram.svg" alt="Telegram icon">
+            </a>
+            <a href="#" aria-label="LinkedIn">
+                <img class="w-6 transition-transform duration-300 hover:scale-110"
+                    src="/portfolio/dist/media/icons/linkedin.svg" alt="LinkedIn icon">
+            </a>
+            <a href="#" aria-label="Instagram">
+                <img class="w-6 transition-transform duration-300 hover:scale-110"
+                    src="/portfolio/dist/media/icons/instagram.svg" alt="Instagram icon">
+            </a>
         </div>
-        <div class="flex flex-col justify-center">
-            <p class="text-center">All Rights Reserved</p>
-            <p class="text-center"> &copy; 2024 HRISHABH RAMGOPAL BHARATI | All rights reserved. |</p> <br>
-            <p class="text-center"><a href="/privacy-policy">Privacy Policy</a> | <a href="/terms-of-service">Terms of
-                    Service</a></p>
+        <div class="flex flex-col items-center">
+            <p class="text-center text-sm">All Rights Reserved</p>
+            <p class="text-center text-sm">&copy; 2024 | HRISHABH RAMGOPAL BHARATI | All rights reserved.</p>
+            <br>
+            <p class="text-center text-sm">
+                <a class="text-blue-400 hover:underline" href="/privacy-policy">Privacy Policy</a> |
+                <a class="text-blue-400 hover:underline" href="/terms-of-service">Terms of Service</a>
+            </p>
         </div>
     </footer>
 
@@ -339,32 +741,32 @@
             },
         });
     </script>
-<!-- DARK MODE JS -->
-<script>
-    // Select the button and icon elements
-    const toggleButton = document.getElementById('darkModeToggle');
-    const toggleIcon = document.getElementById('toggleIcon');
+    <!-- DARK MODE JS -->
+    <script>
+        // Select the button and icon elements
+        const toggleButton = document.getElementById('darkModeToggle');
+        const toggleIcon = document.getElementById('toggleIcon');
 
-    // Check if dark mode is already enabled in localStorage
-    if (localStorage.getItem('theme') === 'dark') {
-        document.documentElement.classList.add('dark');
-        toggleIcon.textContent = '🌙';
-    }
-
-    // Toggle dark mode on button click
-    toggleButton.addEventListener('click', () => {
-        document.documentElement.classList.toggle('dark');
-
-        // Update icon and save theme to localStorage
-        if (document.documentElement.classList.contains('dark')) {
+        // Check if dark mode is already enabled in localStorage
+        if (localStorage.getItem('theme') === 'dark') {
+            document.documentElement.classList.add('dark');
             toggleIcon.textContent = '🌙';
-            localStorage.setItem('theme', 'dark');
-        } else {
-            toggleIcon.textContent = '🌞';
-            localStorage.setItem('theme', 'light');
         }
-    });
-</script>
+
+        // Toggle dark mode on button click
+        toggleButton.addEventListener('click', () => {
+            document.documentElement.classList.toggle('dark');
+
+            // Update icon and save theme to localStorage
+            if (document.documentElement.classList.contains('dark')) {
+                toggleIcon.textContent = '🌙';
+                localStorage.setItem('theme', 'dark');
+            } else {
+                toggleIcon.textContent = '🌞';
+                localStorage.setItem('theme', 'light');
+            }
+        });
+    </script>
 </body>
 
 
