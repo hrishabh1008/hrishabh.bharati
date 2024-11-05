@@ -1049,22 +1049,6 @@ video {
   --tw-gradient-to: #14b8a6 var(--tw-gradient-to-position);
 }
 
-.to-fuchsia-600 {
-  --tw-gradient-to: #c026d3 var(--tw-gradient-to-position);
-}
-
-.to-fuchsia-700 {
-  --tw-gradient-to: #a21caf var(--tw-gradient-to-position);
-}
-
-.to-green-700 {
-  --tw-gradient-to: #15803d var(--tw-gradient-to-position);
-}
-
-.to-blue-700 {
-  --tw-gradient-to: #1d4ed8 var(--tw-gradient-to-position);
-}
-
 .p-2 {
   padding: 0.5rem;
 }
